@@ -53,3 +53,13 @@ window.addEventListener('resize', () => {
     const singleCardWidth = card.offsetWidth;
     const cardsPerSlide = Math.floor(cardsContainer.offsetWidth / singleCardWidth);
 });
+const card1 = document.getElementById("card1");
+const popup = document.getElementById("card1_popup");
+card1.addEventListener("click", ()=>{
+    popup.style.display = "flex";
+    popup.style.transition = "0.3s ease-in-out"
+})
+const close = document.getElementById("close");
+close.addEventListener("click", ()=>{
+    popup.style.display = "none";
+})
