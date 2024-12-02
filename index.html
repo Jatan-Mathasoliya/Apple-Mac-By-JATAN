@@ -81,13 +81,14 @@
         <div class="cards_heading">Get to know Mac.</div>
         <div class="main_cards_container">
             <div class="cards" id="sliderCard">
-                <div class="card1">
+                <div class="card1" id="card1">
                     <div class="card1_text">
                         <div class="c1_t1">Apple Intelligence and macOS</div>
                         <div class="c1_t2">Built for Apple Intelligence</div>
                     </div>
 
                 </div>
+
                 <div class="card2">
                     <div class="card1_text">
                         <div class="c2_t1">Performance and Battery Life</div>
@@ -135,6 +136,29 @@
         <div class="buttons">
             <button class="nav-button prev" onclick="slide(-1)">&#10094;</button>
             <button class="nav-button next" onclick="slide(1)">&#10095;</button>
+        </div>
+        <div class="card1_popup" id="card1_popup">
+            <div class="popup_container">
+                <div class="pc_heading">
+                    <div class="pc_h1">
+                        <div class="sub_h1">Apple Intelligence and macOS</div>
+                        <div class="card1_close" id="close" style="cursor: pointer;">&#10005</div>
+                    </div>
+                    <div class="pc_h2">Easy to use. Easy to love.</div>
+                </div>
+                <div class="popup_content_border">
+                    <div class="popup_content">
+                        <div class="description">Built for Apple Intelligence. <span>Apple Intelligence is the personal
+                                intelligence system that helps you write, express yourself and get things done
+                                effortlessly. With groundbreaking privacy protections, it gives you peace of mind that
+                                no one else can access your data — not even Apple.1</span></div>
+                        <div class="popup_image">
+                            <img src="https://www.apple.com/in/mac/home/images/overview/consider/boc_intelligence_01__cpbsq0243sty_large.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
