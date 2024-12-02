@@ -252,6 +252,82 @@ transition: transform 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     background-color: #ebebeb;
   }
+  .card1_popup{
+    display: none;
+    background: rgba(0, 0, 0, 0.3);
+    height: 175vh;
+    width: 98.3vw;
+    position: absolute;
+    backdrop-filter: blur(10px);
+  }
+  .popup_container{
+    background-color: white;
+    margin: 3vw 20vh;
+    border: none;
+    border-radius: 25px;
+    padding: 3vh;
+    
+  }
+  .pc_heading{
+      display: flex;
+      flex-direction: column;
+      gap: 3vh;
+    padding: 7vh 10vh 00vh 10vh;
+  }
+  .pc_h1{
+    display: flex;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-weight: 700;
+  }
+  .card1_close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 4.3vh;
+    width: 2vw;
+    border-radius: 18px;
+    background-color: #c2c2c2;
+  }
+  .pc_h2{
+    font-family: Roboto;
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+  .popup_content_border{
+    margin: 5vh;
+    position: relative;
+  background: linear-gradient(to right, purple, blue, cyan, orange);
+  padding: 2px; /* Thickness of the border */
+  border-radius: 20px; /* Rounded border corners */
+  box-shadow: 
+    inset 10 10 15px rgba(138, 43, 226, 0.5), /* Purple inner glow */
+    inset 10 10 25px rgba(255, 165, 0, 0.5), /* Orange inner glow */
+    inset 10 10 30px rgba(0, 191, 255, 0.5); /* Blue inner glow */
+  }
+  .popup_content{
+    margin: 0.3vh;
+    background: white; /* Inner card background */
+  border-radius: 18px; /* Inner border radius, slightly smaller */
+  }
+  .description{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: roboto;
+    padding: 3vw 6vw;
+    span{
+        font-size: 1.5rem;
+        color: #6f6f71;
+    }
+  }
+  .popup_image{
+    img{
+        border-radius: 18px;
+        width: 100%;
+        height: 100%;
+    }
+  }
     </style>
 </head>
 <body>
@@ -259,13 +335,14 @@ transition: transform 0.3s ease-in-out;
         <div class="cards_heading">Get to know Mac.</div>
         <div class="main_cards_container">
             <div class="cards" id="sliderCard">
-                <div class="card1">
+                <div class="card1" id="card1">
                     <div class="card1_text">
                         <div class="c1_t1">Apple Intelligence and macOS</div>
                         <div class="c1_t2">Built for Apple Intelligence</div>
                     </div>
 
                 </div>
+
                 <div class="card2">
                     <div class="card1_text">
                         <div class="c2_t1">Performance and Battery Life</div>
@@ -314,6 +391,29 @@ transition: transform 0.3s ease-in-out;
             <button class="nav-button prev" onclick="slide(-1)">&#10094;</button>
             <button class="nav-button next" onclick="slide(1)">&#10095;</button>
         </div>
+        <div class="card1_popup" id="card1_popup">
+            <div class="popup_container">
+                <div class="pc_heading">
+                    <div class="pc_h1">
+                        <div class="sub_h1">Apple Intelligence and macOS</div>
+                        <div class="card1_close" id="close" style="cursor: pointer;">&#10005</div>
+                    </div>
+                    <div class="pc_h2">Easy to use. Easy to love.</div>
+                </div>
+                <div class="popup_content_border">
+                    <div class="popup_content">
+                        <div class="description">Built for Apple Intelligence. <span>Apple Intelligence is the personal
+                                intelligence system that helps you write, express yourself and get things done
+                                effortlessly. With groundbreaking privacy protections, it gives you peace of mind that
+                                no one else can access your data — not even Apple.1</span></div>
+                        <div class="popup_image">
+                            <img src="https://www.apple.com/in/mac/home/images/overview/consider/boc_intelligence_01__cpbsq0243sty_large.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script>
         let scrollPosition = 0;
@@ -354,6 +454,17 @@ window.addEventListener('resize', () => {
     const singleCardWidth = card.offsetWidth;
     const cardsPerSlide = Math.floor(cardsContainer.offsetWidth / singleCardWidth);
 });
+
+const card1 = document.getElementById("card1");
+const popup = document.getElementById("card1_popup");
+card1.addEventListener("click", ()=>{
+    popup.style.display = "flex";
+    popup.style.transition = "0.3s ease-in-out"
+})
+const close = document.getElementById("close");
+close.addEventListener("click", ()=>{
+    popup.style.display = "none";
+})
     </script>
 </body>
 </html>
