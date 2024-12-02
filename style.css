@@ -467,3 +467,20 @@ transition: transform 0.3s ease-in-out;
         height: 100%;
     }
   }
+  .order{
+    text-align: center;
+    font-size: 2rem;
+    border: none;
+    height: 8vh;
+    width: 15vw;
+    border-radius: 8px;
+  }
+  .order_button{
+    display: flex;
+    justify-content: center;
+  }
+.order:hover{
+    color: white;
+    background-color: #2378cd;
+    transition: 0.3s ease-in-out;
+}
