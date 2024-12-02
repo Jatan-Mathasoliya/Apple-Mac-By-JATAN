@@ -115,3 +115,32 @@ nav{
         width: 15vh;
     }
 }
+.mainvideo{
+    display: flex;
+    flex-direction: column;
+}
+.video_heading{
+    margin: 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+.h1{
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: Roboto;
+}
+.h2{
+    font-size: 1.8rem;
+    font-family: Roboto;
+    font-weight: 700;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    video{
+        width: 90vw;
+        border-radius: 25px;
+        border: none;
+    }
+}
