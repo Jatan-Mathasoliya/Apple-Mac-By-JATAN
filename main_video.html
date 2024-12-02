@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        .mainvideo{
+    display: flex;
+    flex-direction: column;
+}
+.video_heading{
+    margin: 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+.h1{
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: Roboto;
+}
+.h2{
+    font-size: 1.8rem;
+    font-family: Roboto;
+    font-weight: 700;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    video{
+        width: 90vw;
+        border-radius: 25px;
+        border: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="mainvideo">
+        <div class="video_heading">
+            <div class="h1">Mac</div>
+            <div class="h2">
+                <div>If you can dream it,</div>
+                 Mac can do it.</div>
+        </div>
+        <div class="video">
+            <video src="xlarge_2x.mp4" autoplay loop></video>
+        </div>
+    </div>
+</body>
+</html>
