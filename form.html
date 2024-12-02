@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        
+
+        form {
+            width: 30vw;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+      label{
+        font-family: Roboto;
+      }
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .output {
+      margin-top: 20px;
+      text-align: center;
+      font-family: roboto;
+    }
+    .order_form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="order_form">
+        <form id="order_form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="adress">Adress:</label>
+            <input type="text" id="age" name="age" required>
+
+            <label for="model">Models:
+                <select name="model" id="models">
+                    <option value="mackbook Air">mackbook Air</option>
+                    <option value="mackbook Pro">mackbook Pro</option>
+                    <option value="mac Mini">mac Mini</option>
+                    <option value="mackbook studio">mac studio</option>
+                    <option value="mackbook Pro">mac Pro</option>
+                </select>
+            </label>
+            <button type="submit">Submit</button>
+
+        </form>
+        <div class="form_image">
+            <img src="https://www.apple.com/v/macbook-air/s/images/overview/performance/compare/model_mba_m3__dgwkvigl8geq_large.jpg" alt="">
+        </div>
+    </div>
+    <div class="output" id="output"></div>
+    <script>
+        // Select the form and output container
+const form = document.getElementById('order_form');
+const output = document.getElementById('output');
+
+// Add a submit event listener to the form
+form.addEventListener('submit', function (event) {
+  // Prevent the form from submitting to the server
+  event.preventDefault();
+
+  // Get the form data
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const adress = document.getElementById('age').value;
+  const model = document.getElementById('models').value
+
+  // Save the data to local storage
+  const userData = { name, email, adress, model };
+  localStorage.setItem('userData', JSON.stringify(userData));
+
+  // Display a message to the user
+  output.innerHTML = `
+    <h2>Thank you, ${name}!</h2>
+    <p>Your Order has been Placed successfully.</p>
+    <p>Email: ${email}</p>
+    <p>It will Deliver at ${adress} as soon as possible</p>
+    <p>Model: ${model}</p>
+  `;
+
+  // Optionally clear the form
+  form.reset();
+
+  setTimeout(()=>{
+    window.location.href = 'http://127.0.0.1:3000/index.html';
+  },3000);
+});
+    </script>
+</body>
+</html>
