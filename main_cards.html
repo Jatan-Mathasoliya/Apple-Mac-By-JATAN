@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main_cards{
+    display: flex;
+    flex-direction: column;
+}
+.cards_heading{
+    font-size: 3rem;
+    font-family: Roboto;
+    font-weight: 500;
+    margin: 8vw 4vw 0vw 4vw;
+}
+.main_cards_container{
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-top: 12vh;
+}
+.cards {
+    gap: 2vw;
+    transition: transform 0.5s ease-in-out; /* Faster but smooth transition */
+    margin-left: 4vw;
+    display: flex;
+}
+
+.card1{
+    background-image: url(Assets/card1.png);
+    background-size: 22vw 95vh;
+background-repeat: no-repeat;
+border: none; 
+border-radius: 25px 25px 25px 25px;
+width: 22vw;
+flex-shrink: 0;
+transition: transform 0.3s ease-in-out;
+}
+.card1:hover{
+    transform: scale(1.02 , 1.02);
+}
+.card1_text{
+    padding-bottom: 83vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    div{
+        font-family: Roboto;
+    }
+}
+.c1_t1{
+font-size: 1.2rem;
+font-weight: 500;
+margin-top: 3vh;
+margin-left: 3vh;
+}
+.c1_t2{
+margin-left: 3vh;
+font-size: 1.7rem;
+color: blueviolet;
+font-weight: 700;
+
+}
+.card2{
+    background-image: url(Assets/card2.jpg);
+    background-size: 22vw 95vh;
+background-repeat: no-repeat;
+border: none; 
+border-radius: 25px 25px 25px 25px;
+width: 22vw;
+flex-shrink: 0;
+transition: transform 0.3s ease-in-out;
+
+}
+.card2:hover{
+    transform: scale(1.02 , 1.02);
+}
+.c2_t1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 3vh;
+    margin-left: 3vh;
+    color: #f3f3f7;
+    }
+.c2_t2{
+    margin-left: 3vh;
+    font-size: 1.7rem;
+    color: #f3f3f7;
+    font-weight: 700;
+    }
+.card3{
+    background-image: url(Assets/card3.jpg);
+    background-size: 22vw 95vh;
+background-repeat: no-repeat;
+border: none; 
+border-radius: 25px 25px 25px 25px;
+width: 22vw;
+flex-shrink: 0;
+transition: transform 0.3s ease-in-out;
+
+}
+.card3:hover{
+    transform: scale(1.02 , 1.02);
+}
+.c3_t1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 3vh;
+    margin-left: 3vh;
+    color: #1c1d1e;
+    }
+.c3_t2{
+    margin-left: 3vh;
+    font-size: 1.7rem;
+    color: #1c1d1e;
+    font-weight: 700;
+    }
+.card4{
+    background-image: url(Assets/card4.jpg);
+    background-size: 22vw 95vh;
+background-repeat: no-repeat;
+border: none; 
+border-radius: 25px 25px 25px 25px;
+width: 22vw;
+flex-shrink: 0;
+transition: transform 0.3s ease-in-out;
+
+}
+.card4:hover{
+    transform: scale(1.02 , 1.02);
+}
+.c4_t1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 3vh;
+    margin-left: 3vh;
+    color: #1c1d1e;
+    }
+.c4_t2{
+    margin-left: 3vh;
+    font-size: 1.7rem;
+    width: 15vw;
+    color: #1c1d1e;
+    font-weight: 700;
+    }
+.card5{
+    background-image: url(Assets/card5.jpg);
+    background-size: 22vw 95vh;
+background-repeat: no-repeat;
+border: none; 
+border-radius: 25px 25px 25px 25px;
+width: 22vw;
+flex-shrink: 0;
+transition: transform 0.3s ease-in-out;
+
+}
+.card5:hover{
+    transform: scale(1.02, 1.02);
+}
+.c5_t1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 3vh;
+    margin-left: 3vh;
+    color: #f3f3f7;
+    }
+.c5_t2{
+    margin-left: 3vh;
+    font-size: 1.7rem;
+    width: 15vw;
+    color: #f3f3f7;
+    font-weight: 700;
+    }
+.card6{
+    background-image: url(Assets/card6.jpg);
+    background-size: 22vw 95vh;
+background-repeat: no-repeat;
+border: none; 
+border-radius: 25px 25px 25px 25px;
+width: 22vw;
+flex-shrink: 0;
+transition: transform 0.3s ease-in-out;
+
+}
+.card6:hover{
+    transform: scale(1.02 , 1.02);
+}
+.c6_t1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 3vh;
+    margin-left: 3vh;
+    color: #f3f3f7;
+    }
+.c6_t2{
+    margin-left: 3vh;
+    font-size: 1.7rem;
+    width: 15vw;
+    color: #f3f3f7;
+    font-weight: 700;
+    }
+.card7{
+    background-image: url(Assets/card7.jpg);
+    background-size: 22vw 95vh;
+background-repeat: no-repeat;
+border: none; 
+border-radius: 25px 25px 25px 25px;
+width: 22vw;
+flex-shrink: 0;
+transition: transform 0.3s ease-in-out;
+
+}
+.card7:hover{
+    transform: scale(1.02 , 1.02);
+}
+.c7_t1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 3vh;
+    margin-left: 3vh;
+    color: #f3f3f7;
+    }
+.c7_t2{
+    margin-left: 3vh;
+    font-size: 1.7rem;
+    width: 15vw;
+    color: #f3f3f7;
+    font-weight: 700;
+    }
+.buttons{
+    justify-content: end;
+    margin-right: 5vw;
+    display: flex;
+    gap: 1vw;
+}
+.nav-button{
+    background-color: #e2e2e4;
+    color: rgb(99, 99, 100);
+    border: none;
+    width: 2vw;
+    height: 4.5vh;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 100%;
+    transform: translateY(-50%);
+}
+.nav-button:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #ebebeb;
+  }
+    </style>
+</head>
+<body>
+    <div class="main_cards">
+        <div class="cards_heading">Get to know Mac.</div>
+        <div class="main_cards_container">
+            <div class="cards" id="sliderCard">
+                <div class="card1">
+                    <div class="card1_text">
+                        <div class="c1_t1">Apple Intelligence and macOS</div>
+                        <div class="c1_t2">Built for Apple Intelligence</div>
+                    </div>
+
+                </div>
+                <div class="card2">
+                    <div class="card1_text">
+                        <div class="c2_t1">Performance and Battery Life</div>
+                        <div class="c2_t2">Go fast.Go far.</div>
+                    </div>
+
+                </div>
+                <div class="card3">
+                    <div class="card1_text">
+                        <div class="c3_t1">Mac and iPhone</div>
+                        <div class="c3_t2">Dream team</div>
+                    </div>
+
+                </div>
+                <div class="card4">
+                    <div class="card1_text">
+                        <div class="c4_t1">Compatibility</div>
+                        <div class="c4_t2">Mac runs your favourite apps</div>
+                    </div>
+
+                </div>
+                <div class="card5">
+                    <div class="card1_text">
+                        <div class="c5_t1">Privacy and Security</div>
+                        <div class="c5_t2">Your buisness is nobody else's.</div>
+                    </div>
+
+                </div>
+                <div class="card6">
+                    <div class="card1_text">
+                        <div class="c6_t1">Durability</div>
+                        <div class="c6_t2">Built to stand the rest of time</div>
+                    </div>
+
+                </div>
+                <div class="card7">
+                    <div class="card1_text">
+                        <div class="c7_t1">Apple values</div>
+                        <div class="c7_t2">Our values drive everything we do.</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="nav-button prev" onclick="slide(-1)">&#10094;</button>
+            <button class="nav-button next" onclick="slide(1)">&#10095;</button>
+        </div>
+    </div>
+    <script>
+        let scrollPosition = 0;
+
+const sliderCard = document.getElementById('sliderCard');
+const cardsContainer = document.querySelector('.main_cards_container');
+const card = document.querySelector('.card1'); // Select one card to calculate width
+
+// Dynamically calculate the width of one card
+const singleCardWidth = card.offsetWidth + 40; 
+
+// Number of cards per slide for smoother scrolling
+const cardsPerSlide = 1; // Scroll one card at a time for slower movement
+
+// Total width to slide (single card width)
+const slideWidth = singleCardWidth * cardsPerSlide;
+
+function slide(direction) {
+    // Maximum scroll width considering the container and total card width
+    const maxScroll = singleCardWidth * sliderCard.children.length - cardsContainer.offsetWidth;
+
+    // Update scroll position
+    scrollPosition += direction * slideWidth;
+
+    // Ensure the last card is fully visible
+    if (scrollPosition > maxScroll) {
+        scrollPosition = maxScroll;
+    }
+
+    // Clamp scrollPosition within valid range
+    scrollPosition = Math.max(0, Math.min(scrollPosition, maxScroll));
+
+    // Apply translation
+    sliderCard.style.transform = `translateX(-${scrollPosition}px)`;
+}
+
+window.addEventListener('resize', () => {
+    const singleCardWidth = card.offsetWidth;
+    const cardsPerSlide = Math.floor(cardsContainer.offsetWidth / singleCardWidth);
+});
+    </script>
+</body>
+</html>
