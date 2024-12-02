@@ -391,3 +391,79 @@ transition: transform 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     background-color: #ebebeb;
   }
+  .card1_popup{
+    display: none;
+    background: rgba(0, 0, 0, 0.3);
+    height: 175vh;
+    width: 98.3vw;
+    position: absolute;
+    backdrop-filter: blur(10px);
+  }
+  .popup_container{
+    background-color: white;
+    margin: 3vw 20vh;
+    border: none;
+    border-radius: 25px;
+    padding: 3vh;
+    
+  }
+  .pc_heading{
+      display: flex;
+      flex-direction: column;
+      gap: 3vh;
+    padding: 7vh 10vh 00vh 10vh;
+  }
+  .pc_h1{
+    display: flex;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-weight: 700;
+  }
+  .card1_close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 4.3vh;
+    width: 2vw;
+    border-radius: 18px;
+    background-color: #c2c2c2;
+  }
+  .pc_h2{
+    font-family: Roboto;
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+  .popup_content_border{
+    margin: 5vh;
+    position: relative;
+  background: linear-gradient(to right, purple, blue, cyan, orange);
+  padding: 2px; /* Thickness of the border */
+  border-radius: 20px; /* Rounded border corners */
+  box-shadow: 
+    inset 10 10 15px rgba(138, 43, 226, 0.5), /* Purple inner glow */
+    inset 10 10 25px rgba(255, 165, 0, 0.5), /* Orange inner glow */
+    inset 10 10 30px rgba(0, 191, 255, 0.5); /* Blue inner glow */
+  }
+  .popup_content{
+    margin: 0.3vh;
+    background: white; /* Inner card background */
+  border-radius: 18px; /* Inner border radius, slightly smaller */
+  }
+  .description{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: roboto;
+    padding: 3vw 6vw;
+    span{
+        font-size: 1.5rem;
+        color: #6f6f71;
+    }
+  }
+  .popup_image{
+    img{
+        border-radius: 18px;
+        width: 100%;
+        height: 100%;
+    }
+  }
