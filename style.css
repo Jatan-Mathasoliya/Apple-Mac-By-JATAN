@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: rgb(250, 250, 252);
+}
+.uper{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+        display: flex;
+        text-align: center;
+        list-style: none;
+        color: rgb(104, 104, 104);
+        font-weight: 500;
+    }
+    gap: 2.7vw;
+    font-family: Roboto;
+    font-size: 0.8rem;
+}
+.applelogo{
+    img{
+        width: 1.3vw;
+    }
+}
+.search{
+    img{
+        width: 1.2vw;
+    }
+}
+.cart{
+    img{
+        width: 1.3vw;
+    }
+}
+.downnav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 75vw;
+    }
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+/* Basic styling */
+.menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%; /* Position the dropdown below the button */
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
+    transform: translateY(-40px); /* Initial position for smooth effect */
+  }
+  
+  .dropdown a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Show dropdown on hover */
+  .menu:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Moves the dropdown to its final position */
+  }
+  
+.store_dropdown{
+    top: 70px; /* Adjust based on header height */
+    left: 0;
+    width: 100%;
+    max-height: 0;  /* Start with height 0 */
+    display: flex;
+    width: 98vw;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+    background-color: rgb(250, 250, 252);
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+.store_dropdown.active {
+    max-height: 50vh; /* Expand to desired height */
+    opacity: 1;
+}
+.store{
+    position: relative;
+    display: inline-block;
+}
+.store_first{
+    padding-left: 17vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        list-style: none;
+}
+.store_second{
+    padding-left: 7vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        list-style: none;
+}
+.store_thired{
+    padding-left: 7vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        list-style: none;
+}
+.store{
+    display: flex;
+    flex-direction: column;
+}
+.store_dropdown_head{
+    font-family: Roboto;
+    font-size: 0.8rem;
+    color: darkgrey;
+}
+.store_dropdown_content{
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.store_second_head{
+    font-family: Roboto;
+    font-size: 0.8rem;
+    color: darkgrey;
+}
+.store_second_content{
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 500;
+}
