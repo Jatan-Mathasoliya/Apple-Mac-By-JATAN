@@ -171,11 +171,11 @@ nav{
 
 .card1{
     background-image: url(Assets/card1.png);
-    background-size: 22vw 95vh;
+    background-size: 25vw 95vh;
 background-repeat: no-repeat;
 border: none; 
 border-radius: 25px 25px 25px 25px;
-width: 22vw;
+width: 25vw;
 flex-shrink: 0;
 transition: transform 0.3s ease-in-out;
 }
@@ -206,11 +206,11 @@ font-weight: 700;
 }
 .card2{
     background-image: url(Assets/card2.jpg);
-    background-size: 22vw 95vh;
+    background-size: 25vw 95vh;
 background-repeat: no-repeat;
 border: none; 
 border-radius: 25px 25px 25px 25px;
-width: 22vw;
+width: 25vw;
 flex-shrink: 0;
 transition: transform 0.3s ease-in-out;
 
@@ -233,11 +233,11 @@ transition: transform 0.3s ease-in-out;
     }
 .card3{
     background-image: url(Assets/card3.jpg);
-    background-size: 22vw 95vh;
+    background-size: 25vw 95vh;
 background-repeat: no-repeat;
 border: none; 
 border-radius: 25px 25px 25px 25px;
-width: 22vw;
+width: 25vw;
 flex-shrink: 0;
 transition: transform 0.3s ease-in-out;
 
@@ -260,11 +260,11 @@ transition: transform 0.3s ease-in-out;
     }
 .card4{
     background-image: url(Assets/card4.jpg);
-    background-size: 22vw 95vh;
+    background-size: 25vw 95vh;
 background-repeat: no-repeat;
 border: none; 
 border-radius: 25px 25px 25px 25px;
-width: 22vw;
+width: 25vw;
 flex-shrink: 0;
 transition: transform 0.3s ease-in-out;
 
@@ -288,11 +288,11 @@ transition: transform 0.3s ease-in-out;
     }
 .card5{
     background-image: url(Assets/card5.jpg);
-    background-size: 22vw 95vh;
+    background-size: 25vw 95vh;
 background-repeat: no-repeat;
 border: none; 
 border-radius: 25px 25px 25px 25px;
-width: 22vw;
+width: 25vw;
 flex-shrink: 0;
 transition: transform 0.3s ease-in-out;
 
@@ -316,11 +316,11 @@ transition: transform 0.3s ease-in-out;
     }
 .card6{
     background-image: url(Assets/card6.jpg);
-    background-size: 22vw 95vh;
+    background-size: 25vw 95vh;
 background-repeat: no-repeat;
 border: none; 
 border-radius: 25px 25px 25px 25px;
-width: 22vw;
+width: 25vw;
 flex-shrink: 0;
 transition: transform 0.3s ease-in-out;
 
@@ -344,11 +344,11 @@ transition: transform 0.3s ease-in-out;
     }
 .card7{
     background-image: url(Assets/card7.jpg);
-    background-size: 22vw 95vh;
+    background-size: 25vw 95vh;
 background-repeat: no-repeat;
 border: none; 
 border-radius: 25px 25px 25px 25px;
-width: 22vw;
+width: 25vw;
 flex-shrink: 0;
 transition: transform 0.3s ease-in-out;
 
